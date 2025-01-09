@@ -2,11 +2,11 @@ import Logo from "../assets/Images/Logo.png";
 import Payment from "../assets/Images/Payments.png";
 const Footer = () => {
   return (
-    <footer className="mt-28 px-16 py-14 bg-[#030303]">
+    <footer className="mt-10 lg:mt-28 px-8 md:px-14 lg:px-16 py-14 bg-[#030303]">
       <div className="pb-10 border-b border-white flex flex-row justify-between">
-        <div className="w-5/12 ">
+        <div className="w-1/2 lg:w-5/12 ">
           <img src={Logo} alt="Logo" />
-          <p className="text-white">
+          <p className="text-sm md:text-base text-white mt-5">
             Your dream space deserves the best execution, and that’s where
             United Buildpro Pvt Ltd excels. Our construction services encompass
             everything from foundational work to structural builds,tailored to
@@ -48,7 +48,7 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div className="flex flex-row gap-32 text-white">
+        <div className="flex  flex-col md:flex-row gap-10 lg:gap-32 text-white">
           <ul className="flex flex-col gap-3">
             <li>Home</li>
             <li>Living</li>

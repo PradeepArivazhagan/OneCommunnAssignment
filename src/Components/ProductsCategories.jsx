@@ -14,7 +14,7 @@ const ProductsCategories = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block" }}
+        style={{ ...style, display: "block", background:"transparent" }}
         onClick={onClick}
       />
     );
@@ -36,6 +36,9 @@ const ProductsCategories = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -43,23 +46,20 @@ const ProductsCategories = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -70,44 +70,44 @@ const ProductsCategories = () => {
       <Slider {...settings}>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">Living</h1>
-            <img className="w-24 mx-auto" src={LivingRoom} alt="living room" />
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">Living</h1>
+            <img className="w-20 md:w-24 mx-auto" src={LivingRoom} alt="living room" />
           </div>
         </div>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">
               Dinning
             </h1>
-            <img className="w-24 mx-auto" src={Dinning} alt="Dinning room" />
+            <img className="w-20 md:w-24 mx-auto" src={Dinning} alt="Dinning room" />
           </div>
         </div>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">
               Bed Room
             </h1>
-            <img className="w-24 mx-auto" src={Bedroom} alt="Bed room" />
+            <img className="w-20 md:w-24 mx-auto" src={Bedroom} alt="Bed room" />
           </div>
         </div>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">Office</h1>
-            <img className="w-24 mx-auto" src={Office} alt="office room" />
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">Office</h1>
+            <img className="w-20 md:w-24 mx-auto" src={Office} alt="office room" />
           </div>
         </div>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">
               Storage
             </h1>
-            <img className="w-24 mx-auto" src={Storage} alt="Storage room" />
+            <img className="w-20 md:w-24 mx-auto" src={Storage} alt="Storage room" />
           </div>
         </div>
         <div className="px-2">
           <div className="bg-[#D3D3D3] rounded-lg p-5 flex flex-col items-center gap-4">
-            <h1 className="text-xl text-black font-bold text-center">Study Room</h1>
-            <img className="w-24 mx-auto" src={Study} alt="Study room" />
+            <h1 className="text-lg lg:text-xl text-black font-bold text-center">Study Room</h1>
+            <img className="w-20 md:w-24 mx-auto" src={Study} alt="Study room" />
           </div>
         </div>
       </Slider>
